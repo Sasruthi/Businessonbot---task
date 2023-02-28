@@ -1,0 +1,47 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - more_operations
+  - addition
+  - subtraction
+  - multiplication
+  - division
+
+entities:
+  - operand_1
+  - operand_2
+  - operation
+
+responses:
+  utter_greet:
+    - text: "Hi! I'm a basic calculator. What can I help you with?"
+  utter_ask_operands:
+    - text: "Please provide two operands, separated by a space."
+  utter_ask_operation:
+    - text: "What operation would you like to perform? You can choose addition, subtraction, multiplication, or division."
+  utter_result:
+    - text: "The result is {result}."
+  utter_more_operations:
+    - text: "Do you want to perform more operations?"
+  utter_goodbye:
+    - text: "Goodbye!"
+
+actions:
+  - utter_greet
+  - utter_ask_operands
+  - utter_ask_operation
+  - utter_result
+  - utter_more_operations
+  - utter_goodbye
+  - action_perform_operation
+  - action_check_more_operations
+  - action_addition
+  - action_subtraction
+  - action_multiplication
+  - action_division
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

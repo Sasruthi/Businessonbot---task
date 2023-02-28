@@ -1,0 +1,34 @@
+- intent: addition
+  examples: |
+    - add
+    - addition
+    - plus
+- intent: subtraction
+  examples: |
+    - subtract
+    - minus
+- intent: multiplication
+  examples: |
+    - multiply
+    - times
+- intent: division
+  examples: |
+    - divide
+    - divided by
+- intent: math_operation
+  examples: |
+    - I want to perform a math operation
+    - Can you do some math for me?
+    - Calculate something for me
+
+- regex: operand
+  examples: |
+    - 5
+    - 7.2
+    - -3
+- regex: operation
+  examples: |
+    - add
+    - subtract
+    - multiply
+    - divide

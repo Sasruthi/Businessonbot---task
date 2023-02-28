@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+- rule: Perform addition
+  steps:
+  - intent: addition
+  - action: action_addition
+
+- rule: Perform subtraction
+  steps:
+  - intent: subtraction
+  - action: action_subtraction
+
+- rule: Perform multiplication
+  steps:
+  - intent: multiplication
+  - action: action_multiplication
+
+- rule: Perform division
+  steps:
+  - intent: division
+  - action: action_division
+
+- rule: Ask for more operations
+  steps:
+  - intent: more_operations
+  - action: utter_ask_operand_1
+

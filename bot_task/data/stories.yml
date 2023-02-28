@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+- story: Perform a math operation
+  steps:
+  - intent: math_operation
+  - action: utter_ask_operand_1
+  - intent: operand
+    slot_was_set:
+      - operand_1: 5
+  - action: utter_ask_operand_2
+  - intent: operand
+    slot_was_set:
+      - operand_2: 3.2
+  - action: utter_ask_operation
+  - intent: addition
+    slot_was_set:
+      - operation: add
+  - action: action_addition
+  - action: utter_more_operations
+  - intent: addition
+    slot_was_set:
+      - operand_1: 7
+      - operand_2: 4.5
+      - operation: add
+  - action: action_addition
+  - action: utter_goodbye
